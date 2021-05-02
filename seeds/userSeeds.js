@@ -7,17 +7,32 @@ const userData = [
     "password": "password12345"
   },
   {
-    "name": "Zack",
-    "email": "zack@gmail.com",
+    "name": "Zeke",
+    "email": "zeke@gmail.com",
     "password": "password12345"
   },
   {
-    "name": "Finn",
-    "email": "finn@gmail.com",
+    "name": "Fletch",
+    "email": "fletch@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Rondo",
+    "email": "rondo@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Kaya",
+    "email": "kaya@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Yuki",
+    "email": "yuki@gmail.com",
     "password": "password12345"
   },
 ];
 
-const seedUsers = () => Post.bulkCreate(userData);
+const seedUsers = () => User.bulkCreate(userData);
 
 module.exports = seedUsers;
