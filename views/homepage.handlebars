@@ -1,0 +1,15 @@
+{{#each posts as |post|}}
+<div>
+  <h4>{{post.title}}</h4>
+    <p>Author {{post.User.username}}</p>
+    <p>{{post.timestamp}}</p>
+    <p>{{{post.body}}}</p>   
+    <ul>
+    {{#each post.Comments as |comment|}}
+      <li>
+        {{comment.User.username}}{{comment.comment}}
+      </li>
+    {{/each}}
+    </ul>       
+</div>
+{{/each}}
