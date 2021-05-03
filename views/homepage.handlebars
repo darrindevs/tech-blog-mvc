@@ -1,7 +1,8 @@
 {{#each posts as |post|}}
 <div>
-  <h4>{{post.title}}</h4>
-    <p>Author {{post.User.username}}</p>
+    
+    <p><a href="{{post.title}}">{{post.title}}</a></p>
+    <p>by {{post.user_id}}</p>
     <p>{{post.timestamp}}</p>
     <p>{{{post.body}}}</p>   
     <ul>
